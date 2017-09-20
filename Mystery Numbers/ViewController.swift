@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var guessButton: UIButton!
     @IBOutlet weak var checkImage: UIImageView!
     
+    @IBOutlet weak var guessSlider: UISlider!
     var currentNumberGuess = 0
     var actualNumberAnswer = 0
     
@@ -67,6 +68,7 @@ class ViewController: UIViewController {
             upArrowIcon.isHidden = true
             downArrowIcon.isHidden = true
             checkImage.isHidden = false
+            guessSlider.isHidden = true
             
             }
         else if currentNumberGuess > actualNumberAnswer {
@@ -95,6 +97,7 @@ class ViewController: UIViewController {
         upArrowIcon.isHidden = true
         downArrowIcon.isHidden = true
         checkImage.isHidden = true
+        guessSlider.isHidden = false
         
         
     }

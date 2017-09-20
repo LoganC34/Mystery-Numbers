@@ -166,6 +166,7 @@
                         <outlet property="currentGuessLabel" destination="KCq-iu-cyk" id="c7R-Yy-UbY"/>
                         <outlet property="downArrowIcon" destination="Z7d-9h-F6p" id="nbH-zH-0pW"/>
                         <outlet property="guessButton" destination="mPn-3x-mga" id="fI7-8S-8Io"/>
+                        <outlet property="guessSlider" destination="s4B-Yy-Pqe" id="6m9-os-HGs"/>
                         <outlet property="nextButton" destination="E8x-lN-DvK" id="zgp-kx-KWd"/>
                         <outlet property="tooHighLabel" destination="sSb-qw-i6I" id="ttH-Pd-EBs"/>
                         <outlet property="tooLowLabel" destination="OMj-jE-E73" id="VXs-gJ-8vm"/>
