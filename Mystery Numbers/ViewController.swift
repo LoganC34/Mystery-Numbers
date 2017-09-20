@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tooLowLabel: UILabel!
     
+    @IBOutlet weak var answer: UILabel!
     @IBOutlet weak var upArrowIcon: UIImageView!
     
     @IBOutlet weak var downArrowIcon: UIImageView!
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
         upArrowIcon.isHidden = true
         downArrowIcon.isHidden = true
         checkImage.isHidden = true
+        answer.text = String(actualNumberAnswer)
         
         
 
@@ -59,6 +61,10 @@ class ViewController: UIViewController {
         if (currentNumberGuess == actualNumberAnswer){
             guessButton.isHidden = true
             nextButton.isHidden = false
+            tooHighLabel.isHidden = true
+            tooLowLabel.isHidden = true
+            upArrowIcon.isHidden = true
+            downArrowIcon.isHidden = true
             checkImage.isHidden = false
             
             }
@@ -80,6 +86,7 @@ class ViewController: UIViewController {
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         actualNumberAnswer = Int(arc4random_uniform(_: 101))
+        answer.text = String(actualNumberAnswer)
         guessButton.isHidden = false
         nextButton.isHidden = true
         tooHighLabel.isHidden = true
@@ -87,6 +94,7 @@ class ViewController: UIViewController {
         upArrowIcon.isHidden = true
         downArrowIcon.isHidden = true
         checkImage.isHidden = true
+        
         
     }
     
