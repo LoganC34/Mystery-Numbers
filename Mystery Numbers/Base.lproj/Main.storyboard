@@ -32,7 +32,20 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFD-Ie-9je">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mystery Numbers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfx-Ex-QHD">
+                                                <rect key="frame" x="8" y="14" width="359" height="48"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.36072593930000002" green="0.76679104570000001" blue="0.36106318240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Nfx-Ex-QHD" firstAttribute="leading" secondItem="nFD-Ie-9je" secondAttribute="leading" constant="8" id="ZhO-jw-rcy"/>
+                                            <constraint firstItem="Nfx-Ex-QHD" firstAttribute="top" secondItem="nFD-Ie-9je" secondAttribute="top" constant="14" id="gE7-3A-Rhc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nfx-Ex-QHD" secondAttribute="trailing" constant="8" id="job-LE-fKT"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -77,20 +90,20 @@
                                 </connections>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invertedArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Z7d-9h-F6p">
-                                <rect key="frame" x="16.5" y="438" width="65" height="60"/>
+                                <rect key="frame" x="16" y="438" width="65" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="cEo-LR-s29"/>
                                     <constraint firstAttribute="width" constant="65" id="jVd-9F-z8c"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Too High" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSb-qw-i6I">
-                                <rect key="frame" x="282.5" y="438" width="77.5" height="60"/>
+                                <rect key="frame" x="282" y="438" width="77.5" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Too Low" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMj-jE-E73">
-                                <rect key="frame" x="283.5" y="438" width="77.5" height="60"/>
+                                <rect key="frame" x="283" y="438" width="77.5" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -102,7 +115,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow Icon" translatesAutoresizingMaskIntoConstraints="NO" id="B0S-qn-ouq">
-                                <rect key="frame" x="16.5" y="438" width="65" height="60"/>
+                                <rect key="frame" x="16" y="438" width="65" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="bok-hf-d5p"/>
                                     <constraint firstAttribute="height" constant="60" id="nTc-ny-UUV"/>
@@ -116,7 +129,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="zay-NJ-8qg">
-                                <rect key="frame" x="155" y="438" width="65" height="60"/>
+                                <rect key="frame" x="154" y="438" width="65" height="60"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVY-Va-jbP">
                                 <rect key="frame" x="323" y="509" width="36" height="30"/>
