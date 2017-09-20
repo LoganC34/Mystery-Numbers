@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        actualNumberAnswer = Int(arc4random_uniform(_: 101))
+        actualNumberAnswer = Int(arc4random_uniform(_: 100))
         guessButton.isHidden = false
         nextButton.isHidden = true
         tooHighLabel.isHidden = true
@@ -41,12 +41,13 @@ class ViewController: UIViewController {
         downArrowIcon.isHidden = true
         checkImage.isHidden = true
         answer.text = String(actualNumberAnswer)
+        answer.isHidden = true
         
         
 
     }
     @IBAction func variableFromSlider(_ sender: UISlider) {
-            currentNumberGuess = Int(sender.value)
+            currentNumberGuess = Int(round(sender.value))
         
     }
     @IBAction func guessSlider(_ sender: UISlider) {
@@ -85,7 +86,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        actualNumberAnswer = Int(arc4random_uniform(_: 101))
+        actualNumberAnswer = Int(arc4random_uniform(_: 100))
         answer.text = String(actualNumberAnswer)
         guessButton.isHidden = false
         nextButton.isHidden = true

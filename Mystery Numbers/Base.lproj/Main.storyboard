@@ -64,7 +64,7 @@
                                     <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tqw-at-h1e"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="s4B-Yy-Pqe">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="s4B-Yy-Pqe">
                                 <rect key="frame" x="14" y="509" width="347" height="30"/>
                                 <color key="tintColor" red="0.97674280405044556" green="0.53869277238845825" blue="0.52492588758468628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
