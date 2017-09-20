@@ -25,6 +25,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var guessButton: UIButton!
     @IBOutlet weak var checkImage: UIImageView!
     
+    @IBOutlet weak var minusButton: UIButton!
+    @IBOutlet weak var plusButton: UIButton!
+    public var incrementValue: Float = 1.0
+    
     @IBOutlet weak var guessSlider: UISlider!
     var currentNumberGuess = 0
     var actualNumberAnswer = 0
@@ -69,6 +73,9 @@ class ViewController: UIViewController {
             downArrowIcon.isHidden = true
             checkImage.isHidden = false
             guessSlider.isHidden = true
+            plusButton.isHidden = true
+            minusButton.isHidden = true
+            
             
             }
         else if currentNumberGuess > actualNumberAnswer {
@@ -98,11 +105,26 @@ class ViewController: UIViewController {
         downArrowIcon.isHidden = true
         checkImage.isHidden = true
         guessSlider.isHidden = false
+        plusButton.isHidden = false
+        minusButton.isHidden = false
         
         
     }
     
+    @IBAction func incrementSlider(_ sender: UIButton) {
+        guessSlider.value = guessSlider.value + 1.0
+        currentNumberGuess = currentNumberGuess + 1
+        var temp = Int(currentGuessLabel.text!)
+        currentGuessLabel.text = String(temp! + 1)
+    }
     
+    
+    @IBAction func decrementSlider(_ sender: UIButton) {
+        guessSlider.value = guessSlider.value - 1.0
+        currentNumberGuess = currentNumberGuess - 1
+        var temp = Int(currentGuessLabel.text!)
+        currentGuessLabel.text = String(temp! - 1)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

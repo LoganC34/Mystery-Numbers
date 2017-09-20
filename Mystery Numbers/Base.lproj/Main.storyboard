@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="s4B-Yy-Pqe">
-                                <rect key="frame" x="14" y="509" width="347" height="30"/>
+                                <rect key="frame" x="59" y="509" width="258" height="30"/>
                                 <color key="tintColor" red="0.97674280405044556" green="0.53869277238845825" blue="0.52492588758468628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="MJl-2F-RGr"/>
@@ -118,6 +118,28 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="zay-NJ-8qg">
                                 <rect key="frame" x="155" y="438" width="65" height="60"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVY-Va-jbP">
+                                <rect key="frame" x="323" y="509" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.97674280410000003" green="0.53869277240000002" blue="0.52492588760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="incrementSlider:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hiy-ZA-Awk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSD-8e-bEo">
+                                <rect key="frame" x="16" y="509" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="decrementSlider:" destination="BYZ-38-t0r" eventType="touchUpInside" id="08W-Gi-J1f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -147,12 +169,12 @@
                             <constraint firstAttribute="trailing" secondItem="EDP-Ev-s0b" secondAttribute="trailing" id="ZZa-Sh-Tsx"/>
                             <constraint firstItem="mPn-3x-mga" firstAttribute="top" secondItem="KCq-iu-cyk" secondAttribute="bottom" constant="246" id="c41-h7-KGd"/>
                             <constraint firstItem="zay-NJ-8qg" firstAttribute="leading" secondItem="Z7d-9h-F6p" secondAttribute="trailing" constant="73.5" id="eUe-lf-OVd"/>
-                            <constraint firstItem="s4B-Yy-Pqe" firstAttribute="leading" secondItem="mPn-3x-mga" secondAttribute="leading" id="fa2-kw-ela"/>
+                            <constraint firstItem="s4B-Yy-Pqe" firstAttribute="leading" secondItem="mPn-3x-mga" secondAttribute="leading" constant="45" id="fa2-kw-ela"/>
                             <constraint firstItem="zay-NJ-8qg" firstAttribute="top" secondItem="B0S-qn-ouq" secondAttribute="top" id="hfS-rF-0mb"/>
                             <constraint firstItem="EDP-Ev-s0b" firstAttribute="leading" secondItem="JE8-Z3-iNy" secondAttribute="leading" id="hpm-0I-Dwr"/>
                             <constraint firstItem="EDP-Ev-s0b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iUe-Z4-zrB"/>
-                            <constraint firstItem="s4B-Yy-Pqe" firstAttribute="trailing" secondItem="mPn-3x-mga" secondAttribute="trailing" id="jua-aq-RXY"/>
-                            <constraint firstItem="KCq-iu-cyk" firstAttribute="leading" secondItem="s4B-Yy-Pqe" secondAttribute="leading" constant="24" id="mX7-Iz-vnG"/>
+                            <constraint firstItem="s4B-Yy-Pqe" firstAttribute="trailing" secondItem="mPn-3x-mga" secondAttribute="trailing" constant="-44" id="jua-aq-RXY"/>
+                            <constraint firstItem="KCq-iu-cyk" firstAttribute="leading" secondItem="s4B-Yy-Pqe" secondAttribute="leading" constant="-21" id="mX7-Iz-vnG"/>
                             <constraint firstItem="Z7d-9h-F6p" firstAttribute="top" secondItem="B0S-qn-ouq" secondAttribute="top" id="o9l-0b-Xld"/>
                             <constraint firstItem="EDP-Ev-s0b" firstAttribute="trailing" secondItem="JE8-Z3-iNy" secondAttribute="trailing" id="ob8-xn-2mx"/>
                             <constraint firstItem="EDP-Ev-s0b" firstAttribute="centerX" secondItem="KCq-iu-cyk" secondAttribute="centerX" id="we4-Ke-pvo"/>
@@ -167,7 +189,9 @@
                         <outlet property="downArrowIcon" destination="Z7d-9h-F6p" id="nbH-zH-0pW"/>
                         <outlet property="guessButton" destination="mPn-3x-mga" id="fI7-8S-8Io"/>
                         <outlet property="guessSlider" destination="s4B-Yy-Pqe" id="6m9-os-HGs"/>
+                        <outlet property="minusButton" destination="sSD-8e-bEo" id="qnB-FN-tou"/>
                         <outlet property="nextButton" destination="E8x-lN-DvK" id="zgp-kx-KWd"/>
+                        <outlet property="plusButton" destination="XVY-Va-jbP" id="mmb-Hs-rCL"/>
                         <outlet property="tooHighLabel" destination="sSb-qw-i6I" id="ttH-Pd-EBs"/>
                         <outlet property="tooLowLabel" destination="OMj-jE-E73" id="VXs-gJ-8vm"/>
                         <outlet property="upArrowIcon" destination="B0S-qn-ouq" id="JSj-gL-eH0"/>
