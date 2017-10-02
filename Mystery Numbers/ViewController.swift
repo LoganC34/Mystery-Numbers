@@ -45,6 +45,10 @@ class ViewController: UIViewController {
         upArrowIcon.isHidden = true
         downArrowIcon.isHidden = true
         checkImage.isHidden = true
+        
+        
+        //This was used to check if the high and low labels worked. Making this false will display the answer.
+        //Otherwise this is hidden
         answer.text = String(actualNumberAnswer)
         answer.isHidden = true
         

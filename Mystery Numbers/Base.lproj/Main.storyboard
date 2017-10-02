@@ -237,7 +237,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFy-1j-2tZ">
-                                <rect key="frame" x="50" y="136" width="276" height="350"/>
+                                <rect key="frame" x="49" y="206" width="277" height="242"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mystery Numbers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qab-bd-kov">
                                         <rect key="frame" x="8" y="8" width="260" height="34"/>
@@ -245,27 +245,27 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="1RQ-AS-z27"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzD-ZA-9Ie">
-                                        <rect key="frame" x="8" y="41" width="260" height="256"/>
+                                        <rect key="frame" x="8" y="41" width="260" height="147"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="260" id="j20-ii-Jaq"/>
                                         </constraints>
                                         <string key="text">This is a game of guessing a secret number between 0 and 99. Use the slider to change the number you want to guess. Once you start getting close, use the plus and minus buttons to change the number by one digit. Use the hints to know if your guess is too high or too low.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBE-72-OnU">
-                                        <rect key="frame" x="8" y="296" width="260" height="46"/>
+                                        <rect key="frame" x="8" y="188" width="260" height="46"/>
                                         <color key="backgroundColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="MWZ-la-7ZN"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Close"/>
                                         <connections>
                                             <action selector="closePopup:" destination="uh7-ua-3eQ" eventType="touchUpInside" id="0Zr-qh-gsh"/>
@@ -277,7 +277,7 @@
                                     <constraint firstItem="BBE-72-OnU" firstAttribute="bottom" secondItem="HFy-1j-2tZ" secondAttribute="bottomMargin" id="6LN-Zf-Ppd"/>
                                     <constraint firstItem="PzD-ZA-9Ie" firstAttribute="leading" secondItem="Qab-bd-kov" secondAttribute="leading" id="BH9-kQ-Lvo"/>
                                     <constraint firstItem="PzD-ZA-9Ie" firstAttribute="top" secondItem="HFy-1j-2tZ" secondAttribute="top" constant="41" id="BvS-a0-Ueh"/>
-                                    <constraint firstItem="BBE-72-OnU" firstAttribute="top" secondItem="PzD-ZA-9Ie" secondAttribute="bottom" constant="-1" id="FcP-Pf-vWC"/>
+                                    <constraint firstItem="BBE-72-OnU" firstAttribute="top" secondItem="PzD-ZA-9Ie" secondAttribute="bottom" id="FcP-Pf-vWC"/>
                                     <constraint firstItem="PzD-ZA-9Ie" firstAttribute="trailing" secondItem="BBE-72-OnU" secondAttribute="trailing" id="QLp-8b-gjo"/>
                                     <constraint firstItem="Qab-bd-kov" firstAttribute="leading" secondItem="HFy-1j-2tZ" secondAttribute="leadingMargin" id="QvD-KB-Uf5"/>
                                     <constraint firstItem="Qab-bd-kov" firstAttribute="top" secondItem="HFy-1j-2tZ" secondAttribute="topMargin" id="gE5-Cj-Loa"/>
@@ -288,10 +288,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.19090411783368172" green="0.1927942576142132" blue="0.1927942576142132" alpha="0.79722281678082196" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="n8e-c9-nHC" firstAttribute="top" secondItem="HFy-1j-2tZ" secondAttribute="bottom" constant="181" id="0AH-gb-Ysf"/>
+                            <constraint firstItem="n8e-c9-nHC" firstAttribute="top" secondItem="HFy-1j-2tZ" secondAttribute="bottom" constant="219" id="0AH-gb-Ysf"/>
                             <constraint firstItem="HFy-1j-2tZ" firstAttribute="centerX" secondItem="Ak5-aP-ZCJ" secondAttribute="centerX" id="90I-ZO-DaG"/>
-                            <constraint firstItem="HFy-1j-2tZ" firstAttribute="leading" secondItem="Ak5-aP-ZCJ" secondAttribute="leadingMargin" constant="34" id="Poi-nA-luD"/>
-                            <constraint firstItem="HFy-1j-2tZ" firstAttribute="top" secondItem="1Oa-ha-c3y" secondAttribute="bottom" constant="116" id="f8n-fF-3dT"/>
+                            <constraint firstItem="HFy-1j-2tZ" firstAttribute="leading" secondItem="Ak5-aP-ZCJ" secondAttribute="leadingMargin" constant="33" id="Poi-nA-luD"/>
+                            <constraint firstItem="HFy-1j-2tZ" firstAttribute="top" secondItem="1Oa-ha-c3y" secondAttribute="bottom" constant="186" id="f8n-fF-3dT"/>
                         </constraints>
                     </view>
                     <connections>
